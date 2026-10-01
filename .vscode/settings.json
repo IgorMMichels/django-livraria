@@ -1,13 +1,11 @@
 {
-  "python.analysis.extraPaths": [
-    "${workspaceFolder}/__pypackages__/3.14/lib"
-  ],
+  "python.analysis.extraPaths": ["${workspaceFolder}/__pypackages__/3.14/lib"],
   "python.autoComplete.extraPaths": [
     "${workspaceFolder}/__pypackages__/3.14/lib"
   ],
   "python.analysis.autoImportCompletions": true,
   "peacock.color": "#007fff",
   "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
+    "editor.defaultFormatter": "ms-python.black-formatter"
   }
 }
