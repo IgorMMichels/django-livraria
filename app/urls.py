@@ -1,6 +1,6 @@
 from math import e
 
-from core.views import CategoriaViewSet, UserViewSet, EditoraViewSet, AutorViewSet
+from core.views import CategoriaViewSet, UserViewSet, EditoraViewSet, AutorViewSet, LivroViewSet
 
 from django.contrib import admin
 from django.urls import include, path
@@ -24,6 +24,7 @@ router.register(r'categorias', CategoriaViewSet, basename='categorias')
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'editoras', EditoraViewSet, basename='editoras')
 router.register(r'autores', AutorViewSet, basename='autores')
+router.register(r'livros', AutorViewSet, basename='livros')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
