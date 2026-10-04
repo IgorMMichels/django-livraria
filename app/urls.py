@@ -1,3 +1,5 @@
+from core.views import CategoriaViewSet, UserViewSet, EditoraViewSet
+
 from django.contrib import admin
 from django.urls import include, path
 from drf_spectacular.views import (
@@ -16,7 +18,9 @@ from core.views import (
 
 router = DefaultRouter()
 
+router.register(r'categorias', CategoriaViewSet, basename='categorias')
 router.register(r'usuarios', UserViewSet, basename='usuarios')
+router.register(r'editoras', EditoraViewSet, basename='editoras')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -41,3 +45,4 @@ urlpatterns = [
     # API
     path('api/', include(router.urls)),
 ]
+
