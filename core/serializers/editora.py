@@ -1,4 +1,4 @@
-from attr import field
+from attr import fields
 from core.models import Editora
 from rest_framework.serializers import ModelSerializer
 

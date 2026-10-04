@@ -1,4 +1,6 @@
-from core.views import CategoriaViewSet, UserViewSet, EditoraViewSet
+from math import e
+
+from core.views import CategoriaViewSet, UserViewSet, EditoraViewSet, AutorViewSet
 
 from django.contrib import admin
 from django.urls import include, path
@@ -21,6 +23,7 @@ router = DefaultRouter()
 router.register(r'categorias', CategoriaViewSet, basename='categorias')
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'editoras', EditoraViewSet, basename='editoras')
+router.register(r'autores', AutorViewSet, basename='autores')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
