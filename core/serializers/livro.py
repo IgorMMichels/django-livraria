@@ -4,6 +4,6 @@ from rest_framework.serializers import ModelSerializer
 
 
 class LivroSerializer(ModelSerializer):
-    class meta:
-        model: Livro
+    class Meta:
+        model = Livro
         fields = "__all__"
